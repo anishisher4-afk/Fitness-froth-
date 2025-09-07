@@ -130,3 +130,153 @@ Empower your fitness journey with a dynamic online platform dedicated to helping
   </footer>
 </body>
 </html>
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f6fa;
+  color: #222;
+}
+header {
+  background: #111d2f;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+nav {
+  margin-top: 0.7rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1.2rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #20c997;
+}
+
+.hero {
+  background: #20c997;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem 2rem 1rem;
+}
+.hero h2 {
+  font-size: 2rem;
+}
+.hero .cta {
+  display: inline-block;
+  margin-top: 1.3rem;
+  padding: 0.8rem 2rem;
+  background: #111d2f;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.hero .cta:hover {
+  background: #17a589;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.section-divider {
+  margin: 3rem auto 2rem auto;
+  border: none;
+  border-top: 3px solid #20c997;
+  width: 70%;
+}
+
+.workout-routine,
+.cardio-section,
+.meal-plan,
+.injury-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Workout steps */
+.workout-step,
+.cardio-step,
+.meal-step,
+.injury-step {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(32, 201, 151, 0.09);
+  padding: 1.2rem;
+  text-align: center;
+}
+.workout-step img,
+.cardio-step img,
+.meal-step img,
+.injury-step img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+/* Headings color for each section */
+.workout-step h3 {
+  margin-top: 0.5rem;
+}
+.cardio-step h3 {
+  margin-top: 0.5rem;
+  color: #20c997;
+}
+.meal-step h3 {
+  margin-top: 0.5rem;
+  color: #20c997;
+}
+.injury-step h3 {
+  margin-top: 0.5rem;
+  color: #dc3545;
+}
+
+/* Unique backgrounds for meal and injury steps */
+.meal-step {
+  background: #f7fff9;
+}
+.injury-step {
+  background: #fff6f6;
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.09);
+}
+
+footer {
+  background: #111d2f;
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+  .workout-routine,
+  .cardio-section,
+  .meal-plan,
+  .injury-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  main {
+    padding: 1.5rem 0.5rem;
+  }
+}
